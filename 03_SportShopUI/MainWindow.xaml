@@ -1,0 +1,17 @@
+﻿<Window x:Class="_03_SportShopUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_03_SportShopUI"
+        mc:Ignorable="d"
+        Title="ShopDB" Height="450" Width="800">
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+            <Button Name="btnGetClients" Click="btnGetAllClients_Click" Margin="5">Clients</Button>
+            <Button Name="btnGetEmployee" Click="btnGetAllEmployee_Click" Margin="5">Employee</Button>
+            <Button Name="btnGetSales" Click="btnGetAllSales_Click" Margin="5">Sales</Button>
+        </ToolBar>
+            <DataGrid Name="dataGrid" AutoGenerateColumns="True" />
+    </DockPanel>
+</Window>
